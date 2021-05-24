@@ -1402,6 +1402,13 @@ picture {
 }
 
 .portfolio__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   display: inherit;
   height: 100%;
   -webkit-transition: 250ms -webkit-box-shadow cubic-bezier(0.4, 0, 0.2, 1);
@@ -1470,6 +1477,9 @@ picture {
 }
 
 .portfolio__meta {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   border-left: 1px solid var(--border-portfolio-card);
   border-right: 1px solid var(--border-portfolio-card);
   border-bottom: 1px solid var(--border-portfolio-card);

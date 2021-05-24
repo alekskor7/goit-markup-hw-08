@@ -25,6 +25,8 @@
 }
 
 .portfolio__link {
+  display: flex;
+  flex-direction: column;
   display: inherit;
   height: 100%;
   transition: 250ms box-shadow cubic-bezier(0.4, 0, 0.2, 1);
@@ -79,6 +81,7 @@
 }
 
 .portfolio__meta {
+  flex-grow: 1;
   border-left: 1px solid var(--border-portfolio-card);
   border-right: 1px solid var(--border-portfolio-card);
   border-bottom: 1px solid var(--border-portfolio-card);
