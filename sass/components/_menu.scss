@@ -10,10 +10,12 @@
   overflow: scroll;
 
   &.is-open {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: space-between;
+    @media screen and (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: space-between;
+    }
   }
 }
 
