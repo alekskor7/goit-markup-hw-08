@@ -28,7 +28,6 @@
 
 .portfolio__link {
   display: block;
-  height: 100%;
   box-sizing: border-box;
   transition: 250ms box-shadow cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -76,7 +75,6 @@
 }
 
 .portfolio__meta {
-  display: block;
   border-left: 1px solid var(--border-portfolio-card);
   border-right: 1px solid var(--border-portfolio-card);
   border-bottom: 1px solid var(--border-portfolio-card);
