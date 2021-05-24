@@ -39,6 +39,7 @@
 .modal__close-svg {
   fill: var(--logo-studio);
   transition: 250ms fill cubic-bezier(0.4, 0, 0.2, 1);
+
   .modal__btn-close:hover &,
   .modal__btn-close:focus & {
     fill: var(--accent);

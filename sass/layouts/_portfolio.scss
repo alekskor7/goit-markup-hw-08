@@ -14,8 +14,6 @@
 .portfolio__item {
   flex-basis: 100%;
   position: relative;
-  display: block;
-  box-sizing: border-box;
 
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 2 * 30px) / 2);
@@ -27,14 +25,19 @@
 }
 
 .portfolio__link {
-  display: block;
-  box-sizing: border-box;
+  display: inherit;
+  height: 100%;
   transition: 250ms box-shadow cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+
+  &:hover .portfolio__meta,
+  &:focus .portfolio__meta {
+    border: none;
   }
 }
 
