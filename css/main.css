@@ -1409,7 +1409,6 @@ picture {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  display: inherit;
   height: 100%;
   -webkit-transition: 250ms -webkit-box-shadow cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms -webkit-box-shadow cubic-bezier(0.4, 0, 0.2, 1);
@@ -1420,11 +1419,6 @@ picture {
 .portfolio__link:hover, .portfolio__link:focus {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-}
-
-.portfolio__link:hover .portfolio__meta,
-.portfolio__link:focus .portfolio__meta {
-  border: none;
 }
 
 .portfolio__thumb {
