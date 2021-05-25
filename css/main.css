@@ -236,13 +236,19 @@ picture {
 
 .menu__link {
   color: var(--title-color);
-  font-size: 40px;
+  font-size: 24px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   font-weight: 500;
   position: relative;
   -webkit-transition: 250ms color cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms color cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 480px) {
+  .menu__link {
+    font-size: 40px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -297,10 +303,16 @@ picture {
 
 .menu__phone {
   font-weight: 500;
-  font-size: 34px;
+  font-size: 24px;
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: var(--accent);
+}
+
+@media screen and (min-width: 480px) {
+  .menu__phone {
+    font-size: 34px;
+  }
 }
 
 .menu__mail {
@@ -314,14 +326,15 @@ picture {
 .menu__soc-link {
   font-weight: 500;
   font-size: 18px;
-  line-height: 1.22px;
+  line-height: 2.2;
   letter-spacing: 0.02em;
   color: var(--accent);
-  margin-left: 8px;
 }
 
-.menu__soc-link:first-child {
-  margin-left: 0;
+@media screen and (min-width: 446px) {
+  .menu__soc-link {
+    line-height: 1.22;
+  }
 }
 
 .menu__soc-link:last-child {
@@ -336,6 +349,7 @@ picture {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
   margin-left: 10px;
+  margin-right: 7px;
 }
 
 .title {
@@ -1288,6 +1302,12 @@ picture {
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer__title {
+    text-align: left;
+  }
+}
+
 .footer__socials-link {
   background-color: rgba(255, 255, 255, 0.1);
 }
@@ -1424,6 +1444,7 @@ picture {
 }
 
 .portfolio__thumb {
+  position: relative;
   overflow: hidden;
   -webkit-transition: 250ms -webkit-transform cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms -webkit-transform cubic-bezier(0.4, 0, 0.2, 1);
@@ -1446,11 +1467,11 @@ picture {
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 5px 24px;
+  padding: 10px 24px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.56;
   letter-spacing: 0.03em;
   color: var(--alt-title);
@@ -1463,6 +1484,12 @@ picture {
   transition: 250ms opacity cubic-bezier(0.4, 0, 0.2, 1), 250ms -webkit-transform cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms transform cubic-bezier(0.4, 0, 0.2, 1), 250ms opacity cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms transform cubic-bezier(0.4, 0, 0.2, 1), 250ms opacity cubic-bezier(0.4, 0, 0.2, 1), 250ms -webkit-transform cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 480px) {
+  .portfolio__overlay {
+    font-size: 18px;
+  }
 }
 
 .portfolio__link:hover .portfolio__overlay,
